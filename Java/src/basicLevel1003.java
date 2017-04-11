@@ -1,0 +1,91 @@
+import java.util.Scanner;
+
+/**
+ * Created by lwxwl on 2017/4/11.
+ */
+public class basicLevel1003 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        scanner.nextLine();
+        String[] s = new String[n];
+
+        for (int i = 0; i < n; i++) {
+            boolean isOther = false;
+            s[i] = new String(scanner.nextLine());
+            for (int j = 0; j < s[i].length(); j++) {
+                if (s[i].charAt(j) != 'P' && s[i].charAt(j) != 'A' && s[i].charAt(j) != 'T') {
+                    System.out.println("NO");
+                    isOther = true;
+                    break;
+                }
+            }
+
+            if (isOther == false) {
+                if (isTrue(s[i])) {
+                    System.out.println("YES");
+                } else {
+                    System.out.println("NO");
+                }
+
+            }
+        }
+        scanner.close();
+    }
+
+    public static boolean isTrue(String s) {
+        int p = s.indexOf('P');
+        int t = s.indexOf('T');
+
+        if (p > t) {
+            return false;
+        }
+
+        String a = null;
+        String b = null;
+        String c = null;
+        if (p != -1) {
+            a = s.substring(0, p);
+        } else {
+            return false;
+        }
+
+        if (t != -1) {
+            c = s.substring(t + 1, s.length());
+        } else {
+            return false;
+        }
+
+        b = s.substring(p + 1, t);
+
+        if (a.contains("P") || a.contains("T") || b.contains("T") || b.contains("P") || c.contains("P") || c.contains("T")) {
+            return false;
+        }
+
+        if (c.length() < a.length()) {
+            return false;
+        }
+
+        if (b.length() == 0) {
+            return false;
+        }
+
+        if (a.equals(c) && a.equals("")) {
+            return true;
+        }
+
+        int times = 0;
+        for (int i = 0; i <= c.length() - a.length(); i += a.length()) {
+            if (a.equals(c.substring(i, i + a.length()))) {
+                times++;
+            }
+        }
+
+        if (times == b.length()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
