@@ -1,9 +1,6 @@
 import java.util.Scanner;
 import java.util.Stack;
 
-/**
- * Created by lwxwl on 2017/4/11.
- */
 public class basicLevel1002 {
 
     public static void main(String[] args) {

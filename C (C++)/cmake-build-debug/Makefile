@@ -123,60 +123,6 @@ PAT/fast:
 	$(MAKE) -f CMakeFiles/PAT.dir/build.make CMakeFiles/PAT.dir/build
 .PHONY : PAT/fast
 
-1001.o: 1001.c.o
-
-.PHONY : 1001.o
-
-# target to build an object file
-1001.c.o:
-	$(MAKE) -f CMakeFiles/PAT.dir/build.make CMakeFiles/PAT.dir/1001.c.o
-.PHONY : 1001.c.o
-
-1001.i: 1001.c.i
-
-.PHONY : 1001.i
-
-# target to preprocess a source file
-1001.c.i:
-	$(MAKE) -f CMakeFiles/PAT.dir/build.make CMakeFiles/PAT.dir/1001.c.i
-.PHONY : 1001.c.i
-
-1001.s: 1001.c.s
-
-.PHONY : 1001.s
-
-# target to generate assembly for a file
-1001.c.s:
-	$(MAKE) -f CMakeFiles/PAT.dir/build.make CMakeFiles/PAT.dir/1001.c.s
-.PHONY : 1001.c.s
-
-basicLevel1004.o: basicLevel1004.cpp.o
-
-.PHONY : basicLevel1004.o
-
-# target to build an object file
-basicLevel1004.cpp.o:
-	$(MAKE) -f CMakeFiles/PAT.dir/build.make CMakeFiles/PAT.dir/basicLevel1004.cpp.o
-.PHONY : basicLevel1004.cpp.o
-
-basicLevel1004.i: basicLevel1004.cpp.i
-
-.PHONY : basicLevel1004.i
-
-# target to preprocess a source file
-basicLevel1004.cpp.i:
-	$(MAKE) -f CMakeFiles/PAT.dir/build.make CMakeFiles/PAT.dir/basicLevel1004.cpp.i
-.PHONY : basicLevel1004.cpp.i
-
-basicLevel1004.s: basicLevel1004.cpp.s
-
-.PHONY : basicLevel1004.s
-
-# target to generate assembly for a file
-basicLevel1004.cpp.s:
-	$(MAKE) -f CMakeFiles/PAT.dir/build.make CMakeFiles/PAT.dir/basicLevel1004.cpp.s
-.PHONY : basicLevel1004.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +132,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... PAT"
-	@echo "... 1001.o"
-	@echo "... 1001.i"
-	@echo "... 1001.s"
-	@echo "... basicLevel1004.o"
-	@echo "... basicLevel1004.i"
-	@echo "... basicLevel1004.s"
 .PHONY : help
 
 
