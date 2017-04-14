@@ -10,6 +10,7 @@ public class basicLevel1004 {
         for (int i = 0; i < n; i++) {
             string[i] = scanner.nextLine();
         }
+        scanner.close();
         int min = 101;
         int max = -1;
         int minIndex = 0;
