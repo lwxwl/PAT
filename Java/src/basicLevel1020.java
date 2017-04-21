@@ -31,6 +31,7 @@ public class basicLevel1020 {
             temp.unitPrice = temp.totalPrice / temp.inventory;
         }
 
+        scanner.close();
         compare c = new compare();
         Collections.sort(array, c);
 
