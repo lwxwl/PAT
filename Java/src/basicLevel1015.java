@@ -1,4 +1,4 @@
-// 运行超时，但是在牛客网上通过了，待优化٩(∗ ›ω‹ ∗)و
+// Time out at test points 2&3&4, I need my box of expressions ...
 import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
