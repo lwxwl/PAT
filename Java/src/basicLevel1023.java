@@ -1,3 +1,5 @@
+// Here stays some questions.
+// I haven't consider the situation while the first number is zero...
 import java.util.Scanner;
 
 public class basicLevel1023 {
@@ -25,4 +27,4 @@ public class basicLevel1023 {
         System.out.println(str);
     }
 }
-// 永远的运行超时
+
