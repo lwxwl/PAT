@@ -1,3 +1,4 @@
+// Test point 4 ran out time...
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -28,6 +29,4 @@ public class basicLevel1030 {
         }
         System.out.println(num);
     }
-}
-
 }
