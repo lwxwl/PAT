@@ -1,4 +1,40 @@
+// 2017.05.04
+// Ok, I tried to use different data types and passed without run timeout.
+// I have to say, if you run timeout, you'd better try for more times and it may pass. ٩(∗ ›ω‹ ∗)و
+import java.util.Scanner;
+
+public class basicLevel1022 {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        int d = scanner.nextInt();
+        scanner.close();
+        long sum = (long) a + b;
+        System.out.printf("%s", toTransform(sum, d));
+    }
+
+    public static String toTransform(long i, int j) {
+        String str = "";
+        if (i == 0) {
+            return "0";
+        }
+        long divide = i;
+        int divisor = j;
+        while (i != 0) {
+            str += divide % divisor;
+            divide = divisor / divisor;
+        }
+        return str;
+    }
+}
+
+
+// 2017.04.22
 // 果不其然运行超时了……最后还是用C++通过的 づ﹏ど
+/*
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -27,6 +63,7 @@ public class basicLevel1022 {
         }
     }
 }
+*/
 
 // 用下面这种方法的时候输出的是反的，待改正……如果在最后用数组再存一次c的话是不是太麻烦了？？？求教
 /*
