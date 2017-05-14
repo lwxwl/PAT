@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 public class basicLevel1044 {
 
 	public static void main(String[] args) {
@@ -15,37 +16,40 @@ public class basicLevel1044 {
 			String str = scanner.nextLine();
 			if (str.charAt(0) <= '9' && str.charAt(0) >= '0') {
 				Integer integer = new Integer(str);
-				if (integer)
-			}
-		}
-}
-
-	/*
-				Integer cast = new Integer(str);
-				if(cast/13>0)ans[i]=gao[cast/13];
-				if(cast==0){ans[i]="tret"; continue;}
-				if(cast%13==0)continue;
-				if(ans[i] != null)ans[i]=ans[i]+" "+num[cast%13];
-				else ans[i]=num[cast%13];
-			}else{
-				Integer f=0;
-				for(int k=1;k<13;k++){
-					if(str.indexOf(gao[k])!=-1){
-
-						f=k*13;
+				if (integer / 13 > 0) {
+					number[i] = high[integer / 13];
+				}
+				if (integer == 0) {
+					number[i] = "tret";
+					continue;
+				}
+				if (integer % 13 == 0) {
+					continue;
+				}
+				if (number[i] != null) {
+					number[i] = number[i] + " " + num[integer % 13];
+				} else {
+					number[i] = num[integer % 13];
+				}
+			} else {
+				Integer f = 0;
+				for (int j = 1; j < 13; j++) {
+					if (str.contains(high[j])) {
+						f = j * 13;
 						break;
 					}
 				}
-				for(int k=0;k<13;k++){
-					if(str.indexOf(num[k])!=-1){
-						f=f+k;
+				for (int j = 0; j < 13; j++) {
+					if (str.contains(num[j])) {
+						f += j;
 						break;
 					}
 				}
-				ans[i]=f.toString();
+				number[i] = f.toString();
 			}
 		}
-		for(String s:ans)System.out.println(s);
+		for (String s : number) {
+			System.out.println(s);
+		}
 	}
 }
-	*/
