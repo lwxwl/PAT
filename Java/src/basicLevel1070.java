@@ -10,6 +10,7 @@ public class basicLevel1070 {
         for (int i = 0; i < n; i++) {
             length[i] = scanner.nextInt();
         }
+        scanner.close();
         Arrays.sort(length);
         int max = length[0];
         for (int i = 0; i < n; i++) {

@@ -22,6 +22,7 @@ public class basicLevel1066 {
                 }
                 System.out.printf("%03d", temp);
             }
+            scanner.close();
             System.out.println();
         }
     }
