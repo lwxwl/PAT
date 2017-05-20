@@ -18,9 +18,8 @@ int main() {
     for (i = i + 1; week1[i] != '\0'; i++) {
         w2 = week1[i];
         if (w2 - 'A' >= 0 && w2 - 'N' <= 0 || w2 - '0' >= 0 && w2 - '9' <= 0) {
-            if (w2 == week2[i]) {
+            if (w2 == week2[i])
                 break;
-            }
         }
     }
 
@@ -35,12 +34,13 @@ int main() {
     }
 
     h = w2 - 'A';
-    if (h >= 0) {
+    if (h >= 0)
         h += 10;
-    } else {
+    else
         h = w2 - '0';
-    }
+
     char *week_result = week[w1 - 'A'];
+
     printf("%s %02d:%02d\n", week_result, h, pos);
     return 0;
 }
