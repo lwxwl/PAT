@@ -7,7 +7,6 @@ import java.util.Stack;
 public class advancedLevel1005 {
 
     public static void main(String[] args) {
-        String number[] =  {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
         int sum = 0;
         Scanner scanner = new Scanner(System.in);
         BigInteger n = scanner.nextBigInteger();
