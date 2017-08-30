@@ -1,8 +1,5 @@
 import java.util.Scanner;
 
-/**
- * Created by lwxwl on 2017/8/23.
- */
 public class advancedLevel1002 {
 
     public static void main(String[] args) {
@@ -18,6 +15,7 @@ public class advancedLevel1002 {
         for (int i = 0; i < num; i++) {
             array[scanner.nextInt()] += scanner.nextDouble();
         }
+        scanner.close();
 
         int count = 0;
 
